@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className="nav-links">
       <Link to='/'>Home</Link>
       <Link to='/rewards'>Rewards</Link>
-      <a >Community</a>
+      <Link to='/community'>Community</Link>
     </nav>
     <div className="action-buttons">
       <button className="join-btn">

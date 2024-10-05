@@ -2,7 +2,7 @@ import React from 'react'
 import './Reward.css'
 
 const Rewards = () => {
-
+  const rewards = [1, 2, 3];
     const handleClick = () => {
         document.getElementById('file-input').click();
       };
@@ -22,7 +22,7 @@ const Rewards = () => {
               <textarea placeholder='Describe the issue...' />
               <div className='cam'>
                 <button onClick={handleClick}>
-                  <img src='' alt='' />
+                  <img src='camera.png' alt='' />
                   Upload Image
                  
                 </button>
@@ -68,7 +68,25 @@ const Rewards = () => {
               </div>
             </div>
           </section>
-          <section></section>
+          <section className="collect collect--container">
+      <h2 className="collect__title">Rewards Catalog</h2>
+      <div className="collect__grid">
+        {rewards.map((reward) => (
+          <div className="collect__card" key={reward}>
+            <div className="collect__card-content">
+              <div className="collect__icon">
+                <img src="badge.png" alt="Reward Icon" className="collect__icon-img" />
+              </div>
+              <h3 className="collect__reward-title">Eco Reward {reward}</h3>
+              <p className="collect__points">100 points</p>
+              <button className="collect__btn">Redeem</button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+
         </div>
       </main>
     </div>

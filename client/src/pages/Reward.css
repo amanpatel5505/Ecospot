@@ -168,6 +168,7 @@
 .cam {
   display: flex;
   align-items: center;
+ height: 30px;
   margin-left: 0.5rem;
 }
 .cam input {
@@ -185,15 +186,21 @@
 .cam img {
   width: 1rem; /* 4 * 0.25rem */
   height: 1rem; /* 4 * 0.25rem */
-  margin-right: 0.5rem;
+  padding-top: 3px;
+  margin-right: 4px;
+  object-fit: cover;
 }
 .cam input {
   display: none;
 }
-
+.cam button{
+  width: 130px;
+  
+}
 .button-submit {
   width: 100%; /* Full width */
-  background-color: #38a169; /* Tailwind's green-600 */
+  
+  background-color: #7a6ad8; /* Tailwind's green-600 */
   color: white; /* Text color */
   padding: 0.5rem 1rem; /* Padding for the button */
   border: none; /* No border */
@@ -203,7 +210,7 @@
 }
 
 .button-submit:hover {
-  background-color: #2f855a; /* Tailwind's green-700 */
+  background-color: #5544b4; /* Tailwind's green-700 */
 }
 .Dashboard {
   background-color: white;
@@ -281,8 +288,8 @@
   }
   
   .badge-green {
-    background-color: #c6f6d5; /* Light green background */
-    color: #2f855a; /* Dark green text */
+    background-color:#7a6ad8; /* Light green background */
+    color: #ffffff; /* Dark green text */
   }
   
   .text-center {
@@ -292,11 +299,93 @@
   .impact-points {
     font-size: 2rem; /* Large font size for points */
     font-weight: bold; /* Bold font weight */
-    color: #38a169; /* Green color */
+    color:#7a6ad8; /* Green color */
   }
   
-  .impact-description {
-    font-size: 0.875rem; /* Small font size */
-    color: #4a5568; /* Gray color */
+  .collect {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .collect__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .collect__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .collect__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .collect__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .collect__card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .collect__card-content {
+    padding: 1rem;
+  }
+  
+  .collect__icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .collect__icon-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .collect__reward-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .collect__points {
+    font-size: 0.875rem;
+    color: #718096;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .collect__btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color:#7a6ad8;
+    color: white;
+    text-align: center;
+    border-radius: 0.375rem;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+    border: transparent;
+  }
+  
+  .collect__btn:hover {
+    background-color: #5f4fb9;
   }
   

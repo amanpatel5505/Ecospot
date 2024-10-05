@@ -1,3 +1,4 @@
+// src/Banner.jsx
 
 import React from 'react';
 import Slider from 'react-slick';
@@ -7,23 +8,11 @@ import './Banner.css'; // Import your CSS file here
 
 const slides = [
   {
-    category: 'Our Alumni',
-    title: 'Have your Mentor!',
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, nesciunt. Ea laboriosam dolorum enim nesciunt? Esse, veritatis ipsa. Aspernatur iure, impedit animi eveniet suscipit voluptates magni aut quos autem cum.',
+    category: 'Self Dependent Bharat',
+    title: 'Swachh Bharat',
+    description: 'Empowering citizens to take charge of urban cleanliness by reporting and resolving local issues. Through community-driven verification and a reward system, this initiative fosters collaboration and civic responsibility for a cleaner, greener city.',
     image: 'url(../images/banner-item-01.jpg)'
-  },
-  {
-    category: 'Best Result',
-    title: 'Get the best result out of your effort',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, dignissimos ipsam deserunt inventore vel omnis eum praesentium maxime aperiam provident recusandae eveniet obcaecati aliquid rerum atque vero accusantium? Atque, nesciunt!',
-    image: 'url(../images/banner-item-02.jpg)'
-  },
-  {
-    category: 'Mentor Learning',
-    title: 'Mentor Learning helps you save the time',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.',
-    image: 'url(../images/banner-item-03.jpg)'
-  }
+  }  
 ];
 
 const Banner = () => {
@@ -41,9 +30,10 @@ const Banner = () => {
   return (
     <div className="main-banner" id="top">
       <div className="container">
-        <Slider {...settings}>
+        <div {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className={`item item-${index + 1}`} style={{ backgroundImage: slide.image }}>
+              <div className='min-container'>
               <div className="header-text">
                 <span className="category">{slide.category}</span>
                 <h2>{slide.title}</h2>
@@ -52,14 +42,12 @@ const Banner = () => {
                   <div className="main-button">
                     <a href="#">Learn More</a>
                   </div>
-                  <div className="icon-button">
-                    <a href="#"><i className="fa fa-play"></i> What's Mentor?</a>
                   </div>
                 </div>
               </div>
             </div>
           ))}
-        </Slider>
+        </div>
       </div>
     </div>
   );

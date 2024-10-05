@@ -1,80 +1,101 @@
 .footer {
-    background-color: #7a6ad8;
-    margin-top: 3rem;
-    color: #ccc;
-    padding: 2rem 0;
-  }
-  
-  .footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
+  margin-top: 150px;
+  position: relative;
+  background-color: #6a5acd;
+  min-height: 200px;
+  border-radius: 100px 100px 0 0;
+  padding: 3rem 1rem;
+  color: #fff; /* Set default text color to white */
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
   .footer .grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: left;
   }
-  
-  @media (min-width: 768px) {
-    .footer .grid {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  
-  .footer h3 {
-    color: white;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer ul li a {
-    color: #ccc;
-    text-decoration: none;
-  }
-  
-  .footer ul li a:hover {
-    color: white;
-  }
-  
-  .footer p {
-    font-size: 0.875rem;
-    line-height: 1.5;
-  }
-  
-  .footer .social-icons a {
-    color: #ccc;
-    margin-right: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer .social-icons a:hover {
-    color: white;
-  }
-  
-  .footer .bottom-bar {
-    border-top: 1px solid #444;
-    padding-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer .bottom-bar a {
-    color: yellow;
-    text-decoration: none;
-  }
-  
-  .footer .bottom-bar a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer .payment-methods {
-    height: 24px;
-  }
+}
+
+.footer h3 {
+  color: #fff; /* Ensure all headers are white */
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li a {
+  color: #fff; /* Set link text color to white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #ccc; /* Lighter hover effect */
+}
+
+.footer p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #fff; /* Ensure all paragraph text is white */
+}
+
+.footer .social-icons a {
+  color: #fff; /* White for social icons */
+  margin-right: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #ccc; /* Slight hover effect */
+  transform: translateY(-3px);
+}
+
+.footer .bottom-bar {
+  border-top: 1px solid #ccc;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer .bottom-bar a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 1rem;
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+.footer .bottom-bar a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.footer .payment-methods img {
+  max-width: 150px;
+  height: auto;
+  margin-top: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.footer .payment-methods img:hover {
+  filter: grayscale(0);
+}

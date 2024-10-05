@@ -1,0 +1,80 @@
+.footer {
+    background-color: #7a6ad8;
+    margin-top: 3rem;
+    color: #ccc;
+    padding: 2rem 0;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .footer .grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  .footer h3 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    color: white;
+  }
+  
+  .footer p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .footer .social-icons a {
+    color: #ccc;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    color: white;
+  }
+  
+  .footer .bottom-bar {
+    border-top: 1px solid #444;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer .bottom-bar a {
+    color: yellow;
+    text-decoration: none;
+  }
+  
+  .footer .bottom-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .payment-methods {
+    height: 24px;
+  }

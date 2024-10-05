@@ -1,0 +1,302 @@
+.rewards {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+
+.rewards main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .rewards main {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rewards main {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rewards main {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rewards main {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .rewards main {
+    max-width: 1536px;
+  }
+}
+
+.rewards main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rewards main {
+  padding: 1rem;
+}
+.reward-grid {
+  display: grid;
+}
+
+.reward-grid {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .reward-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.reward-grid {
+  gap: 2rem;
+}
+
+.reward-grid .map {
+  background-color: white;
+}
+
+.reward-grid .map {
+  border-radius: 0.5rem;
+}
+
+.reward-grid .map {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.reward-grid .map {
+  padding: 1rem;
+}
+
+.map h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.map h2 {
+  font-weight: 600;
+}
+
+.map h2 {
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  background-color: #e5e7eb; /* Tailwind's gray-200 */
+}
+
+.map-container {
+  height: 20rem; /* 80 * 0.25rem */
+}
+
+.map-container {
+  border-radius: 0.5rem;
+}
+
+.map-container {
+  display: flex;
+}
+
+.map-container {
+  align-items: center;
+}
+
+.map-container {
+  justify-content: center;
+}
+
+.report {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+
+.report h2 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.report form {
+  margin-top: 1rem;
+}
+
+.report form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 1rem; /* Space between elements */
+}
+
+.report input[type='text'],
+.report textarea {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 0.25rem; /* Small border radius */
+  padding: 0.5rem; /* Padding inside the input/textarea */
+  font-size: 1rem; /* Base font size */
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif; /* Full width */
+}
+
+.report input[type='text']::placeholder,
+.report textarea::placeholder {
+  color: #aaa; /* Placeholder color */
+}
+
+.report textarea {
+  min-height: 100px; /* Minimum height for textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.cam {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.cam input {
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 0.25rem; /* Small border radius */
+  background-color: transparent; /* Transparent background */
+  padding: 0.5rem 1rem; /* Padding for the button */
+  display: flex; /* Flex container */
+  align-items: center; /* Vertically center the items */
+  cursor: pointer;
+}
+.cam input:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cam img {
+  width: 1rem; /* 4 * 0.25rem */
+  height: 1rem; /* 4 * 0.25rem */
+  margin-right: 0.5rem;
+}
+.cam input {
+  display: none;
+}
+
+.button-submit {
+  width: 100%; /* Full width */
+  background-color: #38a169; /* Tailwind's green-600 */
+  color: white; /* Text color */
+  padding: 0.5rem 1rem; /* Padding for the button */
+  border: none; /* No border */
+  border-radius: 0.25rem; /* Small border radius */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.button-submit:hover {
+  background-color: #2f855a; /* Tailwind's green-700 */
+}
+.Dashboard {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .Dashboard {
+    grid-column: span 2;
+  } 
+
+  .dashboard-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+.Dashboard h2 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.dashboard-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+.card {
+    background-color: white; /* Card background */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 1rem; /* Padding inside card */
+    margin-bottom: 1rem; /* Space between cards */
+  }
+  
+  .card-header {
+    border-bottom: 1px solid #e5e7eb; /* Light border below header */
+    padding-bottom: 0.5rem; /* Padding below header */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Title font size */
+    font-weight: 600; /* Semi-bold */
+  }
+  
+  .card-content {
+    padding-top: 0.5rem; /* Padding above content */
+  }
+  
+  .space-y-2 > * + * {
+    margin-top: 0.5rem; /* Space between list items */
+  }
+  
+  .report-item {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .badge {
+    padding: 0.25rem 0.5rem; /* Padding for badges */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-size: 0.875rem; /* Small font size */
+  }
+  
+  .badge-outline {
+    border: 1px solid transparent; /* Transparent border for outline */
+  }
+  
+  .badge-yellow {
+    background-color: #fefcbf; /* Light yellow background */
+    color: #8a6e2f; /* Dark yellow text */
+  }
+  
+  .badge-green {
+    background-color: #c6f6d5; /* Light green background */
+    color: #2f855a; /* Dark green text */
+  }
+  
+  .text-center {
+    text-align: center; /* Center text */
+  }
+  
+  .impact-points {
+    font-size: 2rem; /* Large font size for points */
+    font-weight: bold; /* Bold font weight */
+    color: #38a169; /* Green color */
+  }
+  
+  .impact-description {
+    font-size: 0.875rem; /* Small font size */
+    color: #4a5568; /* Gray color */
+  }
+  

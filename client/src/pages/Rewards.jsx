@@ -6,7 +6,7 @@ const Rewards = () => {
     const handleClick = () => {
         document.getElementById('file-input').click();
       };
-
+   
   return (
     <div className='rewards'>
       <main>
@@ -18,7 +18,7 @@ const Rewards = () => {
           <section className='report'>
             <h2>Report an Issue</h2>
             <form action=''>
-              <input type='text' placeholder='Issue Title' />
+              <input type='text' placeholder='Location' />
               <textarea placeholder='Describe the issue...' />
               <div className='cam'>
                 <button onClick={handleClick}>
